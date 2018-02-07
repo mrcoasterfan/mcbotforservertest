@@ -10,13 +10,15 @@ var servercount = client.guilds.size;
 client.on("ready", () => {
 	var servers = client.guilds.array().map(g => g.name).join(',');
 	console.log("--------------------------------------");
-console.log('[!]Connexion en cours... \n[!]Veuillez Patienté! \n[!]Les évenement sont après ! :)  \n[!]Les préfix actuelle:  ' + prefix + "\n[!]Mentions = " + mention + "\n[!]Nombre de membres: " + memberCount + "\n[!]Nombre de serveurs: " + servercount);
+console.log('[!]Connexion en cours... \n[!]Veuillez Patienter! \n[!]Les évenement sont après ! :)  \n[!]Les préfix actuelle:  ' + prefix + "\n[!]Mentions = " + mention + "\n[!]Nombre de membres: " + memberCount + "\n[!]Nombre de serveurs: " + servercount);
 });
 
 client.on('message', message => {
 	if (message.content === ("test")){
 	message.reply('test !');
 } else if (message.content === ("bonjour")){
+	message.reply('Que puis-je faire pour vous ? Ho Ho Ho ');
+} else if (message.content === ("!j'ai besoin de dingo")){
 	message.reply('Que puis-je faire pour vous ? Ho Ho Ho ');
 } else if(message.content.startsWith('!botname')){
 	client.user.setUsername(message.content.substr(9));
