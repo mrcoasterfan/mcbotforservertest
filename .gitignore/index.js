@@ -18,7 +18,7 @@ client.on('message', message => {
 	message.reply('test !');
 } else if (message.content === ("bonjour")){
 	message.reply('Que puis-je faire pour vous ? Ho Ho Ho ');
-} else if (message.content === ("!j'ai besoin de dingo")){
+} else if (message.content === ("!dingo")){
 	message.reply('Que puis-je faire pour vous ? Ho Ho Ho ');
 } else if(message.content.startsWith('!botname')){
 	client.user.setUsername(message.content.substr(9));
