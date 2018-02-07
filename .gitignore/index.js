@@ -15,7 +15,7 @@ console.log('[!]Connexion en cours... \n[!]Veuillez Patienter! \n[!]Les éveneme
 
 client.on('message', message => {
 	if (message.content === ("dingo")){
-	message.reply('test !');
+	message.reply('Que puis-je faire pour vous ? Ho Ho Ho');
 } else if (message.content === ("bonjour")){
 	message.reply('Que puis-je faire pour vous ? Ho Ho Ho ');
 } else if(message.content.startsWith('!botname')){
