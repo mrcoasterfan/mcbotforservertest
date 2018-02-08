@@ -14,9 +14,9 @@ console.log('[!]Connexion en cours... \n[!]Veuillez Patienter! \n[!]Les éveneme
 });
 
 client.on('message', message => {
-	if (message.content === ("dingo")){
+	if (message.content === ("dingoplanning")){
 	message.reply('Que puis-je faire pour vous ? Ho Ho Ho');
-} else if (message.content === ("bonjour")){
+} else if (message.content === (" voici le planning : https://image.noelshack.com/fichiers/2018/06/4/1518109360-images-1.jpg")){
 	message.reply('Que puis-je faire pour vous ? Ho Ho Ho ');
 } else if(message.content.startsWith('!botname')){
 	client.user.setUsername(message.content.substr(9));
